@@ -1,0 +1,64 @@
+
+body{
+    background: #111;
+    margin: 0;
+    padding: 0;
+
+} 
+.container{
+    background: grey;
+    height: 100px;
+    width: 100%;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    position: sticky;
+    opacity: 0.9;
+  
+}
+
+.nav-links li{
+    margin: 0 12px;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    font-weight: 400;
+}
+
+.nav-link::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -4px;
+    height: 3px;
+    width: 0px;
+    border-radius: 2px;
+    transition: 0.4s ease;
+    background-color: red;
+}
+
+.nav-link:hover::after{
+    width: 100%;
+}
+
+.nav-link::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -4px;
+    height: 3px;
+    width: 0px;
+    border-radius: 2px;
+    transition: 0.4s ease;
+    background-color: red;
+}
+.nav-link:hover::before{
+    width: 100%;
+}
+
